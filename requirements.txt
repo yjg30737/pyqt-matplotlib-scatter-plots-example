@@ -1,0 +1,6 @@
+PyQt5>=5.14
+pathlib
+imagesize
+matplotlib
+pillow
+pandas
