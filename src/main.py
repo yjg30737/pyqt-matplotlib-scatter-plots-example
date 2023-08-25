@@ -66,10 +66,7 @@ class Window(QMainWindow):
         # Create a vertical layout
         lay = QVBoxLayout()
 
-        dirname_arr = [
-            'Alzheimer\'s Disease MRI_train',
-            'Parkinson\'s Disease MRI_train',
-        ]
+        dirname_arr = []
 
         titleLbl = QLabel('Select the images to Remove')
         titleLbl.setFont(QFont('Arial', 14))
@@ -137,7 +134,10 @@ class Window(QMainWindow):
 
 
 if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    window = Window()
-    window.show()
-    sys.exit(app.exec_())
+    try:
+        app = QApplication(sys.argv)
+        window = Window()
+        window.show()
+        sys.exit(app.exec_())
+    except Exception as e:
+        print('Fill the dirname_arr with directories containing images')
