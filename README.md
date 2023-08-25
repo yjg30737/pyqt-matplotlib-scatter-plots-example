@@ -33,6 +33,6 @@ Select the dots (which are corresponding with image file inside the directory) w
 
 You can view an underlying image when you click on a specific dot. This could help you make a more careful decision about whether to remove it or not.
 
-## Help
+## Help Me!
 
 I don't know how to refresh the chart after deleting files, so if you want to help me, I will be really glad.
