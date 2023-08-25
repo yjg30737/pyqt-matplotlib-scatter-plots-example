@@ -66,7 +66,10 @@ class Window(QMainWindow):
         # Create a vertical layout
         lay = QVBoxLayout()
 
-        dirname_arr = []
+        dirname_arr = [
+            'Alzheimer\'s Disease MRI',
+            'Parkinson\'s Disease MRI',
+        ]
 
         titleLbl = QLabel('Select the images to Remove')
         titleLbl.setFont(QFont('Arial', 14))
