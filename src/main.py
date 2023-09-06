@@ -120,20 +120,15 @@ class Window(QMainWindow):
             os.remove(filename)
         self.__clear()
         self.__matplotlibWidget.refresh()
+        # self.update_plot()
 
     def __clear(self):
         self.__removeFileList.clear()
 
     def update_plot(self):
-        pass
         # Sample data
-        # x = np.linspace(0, 10, 100)
-        # y = np.sin(x)
-
         # Clear the old data from the plot and plot the new data
-        # self.ax.clear()
-        # self.ax.plot(x, y)
-        # self.canvas.draw()
+        pass
 
 
 if __name__ == '__main__':

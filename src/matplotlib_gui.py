@@ -1,3 +1,5 @@
+import os, sys
+
 from pathlib import Path
 
 import imagesize
@@ -64,10 +66,14 @@ class MatplotlibWidget(QWidget):
         self.selected.emit(filenames)
 
     def refresh(self):
-        pass
         # self.__wrapper.set_img_meta_df()
         # print(len(self.__wrapper.get_img_meta_df().FileName.to_list()))
         # self.__canvas.draw()
+
+        # Define the arguments to be passed to the executable
+        args = [sys.executable, "main.py"]
+        # Call os.execv() to execute the new process
+        os.execv(sys.executable, args)
 
     def get_canvas(self):
         return self.__canvas
