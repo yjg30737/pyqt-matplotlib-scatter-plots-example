@@ -31,8 +31,6 @@ Select the dots (which are corresponding with image file inside the directory) w
 
 <b>If you press the "delete" button, it actually deletes the images. So you have to back them up before you use this.</b>
 
+The program will restart to reload the scatter plot after deletion.
+
 You can view an underlying image when you click on a specific dot. This could help you make a more careful decision about whether to remove it or not.
-
-## Help Me!
-
-I don't know how to refresh the chart after deleting files, so if you want to help me, I will be really glad.
